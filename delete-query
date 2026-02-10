@@ -1,0 +1,5 @@
+-- database: ./database.db
+
+SELECT * FROM Pokemon;
+DELETE FROM Pokemon
+WHERE Pokemon_num IN (1,4,7);

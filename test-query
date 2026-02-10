@@ -1,0 +1,49 @@
+-- database: ./database.db
+
+SELECT * FROM Pokemon;
+
+INSERT INTO Pokemon (Pokemon_num, Pokemon_, Pokemon_type, Pokemon_Gen) 
+VALUES 
+-- Gen 1
+(1, 'Bulbasaur', 'Grass', 1),
+(4, 'Charmander', 'Fire', 1),
+(7, 'Squirtle', 'Water', 1),
+-- Gen 2
+(152, 'Chikorita', 'Grass', 2),
+(155, 'Cyndaquil', 'Fire', 2),
+(158, 'Totodile', 'Water', 2),
+-- Gen 3
+(252, 'Treecko', 'Grass', 3),
+(255, 'Torchic', 'Fire', 3),
+(258, 'Mudkip', 'Water', 3),
+-- Gen 4
+(387, 'Turtwig', 'Grass', 4),
+(390, 'Chimchar', 'Fire', 4),
+(393, 'Piplup', 'Water', 4),
+-- Gen 5
+(495, 'Snivy', 'Grass', 5),
+(498, 'Tepig', 'Fire', 5),
+(501, 'Oshawott', 'Water', 5),
+-- Gen 6
+(650, 'Chespin', 'Grass', 6),
+(653, 'Fennekin', 'Fire', 6),
+(656, 'Froakie', 'Water', 6),
+-- Gen 7
+(722, 'Rowlet', 'Grass', 7),
+(725, 'Litten', 'Fire', 7),
+(728, 'Popplio', 'Water', 7),
+-- Gen 8
+(810, 'Grookey', 'Grass', 8),
+(813, 'Scorbunny', 'Fire', 8),
+(816, 'Sobble', 'Water', 8),
+-- Gen 9
+(906, 'Sprigatito', 'Grass', 9),
+(909, 'Fuecoco', 'Fire', 9),
+(912, 'Quaxly', 'Water', 9);
+
+INSERT INTO Pokemon (Pokemon_NUM, Pokemon_ID, Pokemon_type, Pokemon_Gen) 
+VALUES 
+-- Gen 1
+(1, 'Bulbasaur', 'Grass', 1),
+(4, 'Charmander', 'Fire', 1),
+(7, 'Squirtle', 'Water', 1),
