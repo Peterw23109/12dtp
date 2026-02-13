@@ -2,6 +2,7 @@
 
 SELECT * FROM Pokemon;
 
+-- add
 INSERT INTO Pokemon (Pokemon_num, Pokemon_, Pokemon_type, Pokemon_Gen) 
 VALUES 
 -- Gen 1
@@ -41,9 +42,10 @@ VALUES
 (909, 'Fuecoco', 'Fire', 9),
 (912, 'Quaxly', 'Water', 9);
 
-INSERT INTO Pokemon (Pokemon_NUM, Pokemon_ID, Pokemon_type, Pokemon_Gen) 
-VALUES 
--- Gen 1
-(1, 'Bulbasaur', 'Grass', 1),
-(4, 'Charmander', 'Fire', 1),
-(7, 'Squirtle', 'Water', 1),
+-- delete
+
+DELETE FROM Pokemon
+WHERE Pokemon_num IN (1,4,7);
+
+SELECT * FROM Pokemon 
+WHERE POkemon_num = 1;
