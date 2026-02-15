@@ -1,4 +1,4 @@
-from flask import Flask, g
+from flask import Flask, g, render_template
 import sqlite3
 
 DATABASE = 'database.db'
@@ -28,8 +28,7 @@ def home():
     
     sql = "SELECT * FROM Pokemon;"
     result = query_db(sql)
-    return str(result)
-
+    return render_template("test.html")
 @app.route("/Pokemon/<int:pokemon_num>")
 def pokemon(pokemon_num):
     sql = """SELECT * FROM Pokemon 
