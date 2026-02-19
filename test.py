@@ -26,9 +26,11 @@ def query_db(query, args=(), one=False):
 @app.route('/')
 def home():
     
-    sql = "SELECT * FROM Pokemon;"
+    sql = "SELECT Pokemon_num, Pokemon_Name, Pokemon_type, Pokemon_Gen, Image_URL FROM Pokemon;"
     result = query_db(sql)
-    return render_template("test.html")
+    return render_template("home.html", results = result)
+
+
 @app.route("/Pokemon/<int:pokemon_num>")
 def pokemon(pokemon_num):
     sql = """SELECT * FROM Pokemon 
