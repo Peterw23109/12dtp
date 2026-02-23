@@ -1,12 +1,15 @@
 {% extends "test.html" %}
 {% block body %}
+{% for pokemon in results %}
+    <div>
+        <h2>{{ pokemon[1] }}</h2>
 
-<div class = "three_column">
-    {% for pokemon in results %}
-
-    <h1> {{pokemon[0]}} {{pokemon[1]}} </h1>
-    <img src="{{pokemon[4]}}" alt="{{pokemon[0]}}">
-    {% endfor %}
-</div>
-
+        <a href="{{ url_for('pokemon', pokemon_num=pokemon[0]) }}">
+            View Details
+        </a>
+        <br>
+        <img src="{{ pokemon[4] }}" width="150">
+    </div>
+    <hr>
+{% endfor %}
 {% endblock %}
